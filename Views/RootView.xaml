@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui7.Views.RootView"
+             xmlns:viewModelBase="clr-namespace:Maui7.ViewModels"
+             viewModelBase:ViewModelLocator.AutoWireViewModel="True"
+             NavigationPage.HasNavigationBar="False"
+             Title="RootView">
+    <Grid RowDefinitions="*,60" BackgroundColor="WhiteSmoke">
+        <Grid x:Name="gridRoot" Grid.RowSpan="2">
+            <Grid.Children>
+                <ContentView Content="{Binding Tab}">
+
+                </ContentView>
+            </Grid.Children>
+
+        </Grid>
+
+        <Frame Grid.Row="1" Margin="-2" >
+
+            <Grid x:Name="gridTabs"   RowDefinitions="*,1" ColumnDefinitions="*,*" >
+
+                <ImageButton  x:Name="btnFirst" Source="{Binding TabHome}"  Command="{Binding FirstCommand}" WidthRequest="50" HeightRequest="50" BackgroundColor="Green"/>
+                <ImageButton  x:Name="btnSecond" Grid.Column="1" Source="{Binding TabDiary}" Command="{Binding SecondCommand}" WidthRequest="40" HeightRequest="30" BackgroundColor="Red"/>
+                
+            </Grid>
+        </Frame>
+
+
+    
+    </Grid>
+</ContentPage>
