@@ -4,9 +4,206 @@
              xmlns:viewModelBase="clr-namespace:Maui7.ViewModels"
              viewModelBase:ViewModelLocator.AutoWireViewModel="True"
              x:Class="Maui7.Views.SecondTabView">
+   
+        <ScrollView  BackgroundColor="AliceBlue">
 
-    <Grid>
-        
-    </Grid>
+            <Grid RowDefinitions="*,*,*,*,*,*">
+                <Frame x:Name="frame" BackgroundColor="CornflowerBlue" HeightRequest="200">
+                    <Grid  RowDefinitions="30,50,15,*,*,*"  >
+
+                        <Label Text="Test" FontSize="Title" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+
+                        <Grid Grid.Row="1" RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="Auto,*,Auto"  HeightRequest="50">
+                            
+
+
+
+                        </Grid>
+
+
+                        
+
+
+                    </Grid>
+
+
+
+                </Frame>
+
+
+                <Frame Grid.Row="1" HeightRequest="200" BorderColor="Transparent" >
+                    <Grid RowDefinitions="20,100,80">
+                        <Label Text="Section 1"/>
+                      
+                        <ScrollView Grid.Row="1" Orientation="Horizontal">
+
+                            <StackLayout Orientation="Horizontal"   >
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate >
+                                        <Frame CornerRadius="0" BorderColor="AliceBlue" Margin="-10">
+                                            <Grid HeightRequest="50" RowDefinitions="3*,*" WidthRequest="150">
+
+                                                
+                                            </Grid>
+                                        </Frame>
+
+
+
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </StackLayout>
+                        </ScrollView>
+                        <Grid Margin="5" Grid.Row="2"   RowDefinitions="20,20,20" >
+                           
+
+
+
+                           
+                        </Grid>
+                    </Grid>
+
+
+                </Frame>
+            <Frame Grid.Row="2" HeightRequest="200" BorderColor="Transparent" >
+                <Grid RowDefinitions="20,100,80">
+                    <Label Text="Section 2"/>
+
+                    <ScrollView Grid.Row="1" Orientation="Horizontal">
+
+                        <StackLayout Orientation="Horizontal"   >
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate >
+                                    <Frame CornerRadius="0" BorderColor="AliceBlue" Margin="-10">
+                                        <Grid HeightRequest="50" RowDefinitions="3*,*" WidthRequest="150">
+
+
+                                        </Grid>
+                                    </Frame>
+
+
+
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </StackLayout>
+                    </ScrollView>
+                    <Grid Margin="5" Grid.Row="2"   RowDefinitions="20,20,20" >
+
+
+
+
+
+                    </Grid>
+                </Grid>
+
+
+            </Frame>
+
+            <Frame Grid.Row="3" HeightRequest="200" BorderColor="Transparent" >
+                <Grid RowDefinitions="20,100,80">
+                    <Label Text="Section 3"/>
+
+                    <ScrollView Grid.Row="1" Orientation="Horizontal">
+
+                        <StackLayout Orientation="Horizontal"   >
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate >
+                                    <Frame CornerRadius="0" BorderColor="AliceBlue" Margin="-10">
+                                        <Grid HeightRequest="50" RowDefinitions="3*,*" WidthRequest="150">
+
+
+                                        </Grid>
+                                    </Frame>
+
+
+
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </StackLayout>
+                    </ScrollView>
+                    <Grid Margin="5" Grid.Row="2"   RowDefinitions="20,20,20" >
+
+
+
+
+
+                    </Grid>
+                </Grid>
+
+
+            </Frame>
+
+            <Frame Grid.Row="4" HeightRequest="200" BorderColor="Transparent" >
+                <Grid RowDefinitions="20,100,80">
+                    <Label Text="Section 4"/>
+
+                    <ScrollView Grid.Row="1" Orientation="Horizontal">
+
+                        <StackLayout Orientation="Horizontal"   >
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate >
+                                    <Frame CornerRadius="0" BorderColor="AliceBlue" Margin="-10">
+                                        <Grid HeightRequest="50" RowDefinitions="3*,*" WidthRequest="150">
+
+
+                                        </Grid>
+                                    </Frame>
+
+
+
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </StackLayout>
+                    </ScrollView>
+                    <Grid Margin="5" Grid.Row="2"   RowDefinitions="20,20,20" >
+
+
+
+
+
+                    </Grid>
+                </Grid>
+
+
+            </Frame>
+            <Frame Grid.Row="5" HeightRequest="200" BorderColor="Transparent" >
+                <Grid RowDefinitions="20,100,80">
+                    <Label Text="Section 5"/>
+
+                    <ScrollView Grid.Row="1" Orientation="Horizontal">
+
+                        <StackLayout Orientation="Horizontal"   >
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate >
+                                    <Frame CornerRadius="0" BorderColor="AliceBlue" Margin="-10">
+                                        <Grid HeightRequest="50" RowDefinitions="3*,*" WidthRequest="150">
+
+
+                                        </Grid>
+                                    </Frame>
+
+
+
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </StackLayout>
+                    </ScrollView>
+                    <Grid Margin="5" Grid.Row="2"   RowDefinitions="20,20,20" >
+
+
+
+
+
+                    </Grid>
+                </Grid>
+
+
+            </Frame>
+
+
+        </Grid>
+
+
+
+        </ScrollView>
    
 </ContentView>
